@@ -94,6 +94,5 @@ public class Task {
 
         System.out.println("Counted letters:");
         System.out.print(createReport(countLetters(input)));
-
     }
 }
