@@ -1,7 +1,6 @@
 package task1;
 
 import java.util.Locale;
-import java.util.Scanner;
 
 /**
  * JavaAcademy test task solution
@@ -89,8 +88,10 @@ public class Task {
 
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-        String input = in.nextLine();
+        String input = "";
+        for (String s : args) {
+            input += s + " ";
+        }
 
         System.out.println("Counted letters:");
         System.out.print(createReport(countLetters(input)));
