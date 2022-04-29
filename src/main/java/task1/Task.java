@@ -42,7 +42,7 @@ public class Task {
      * @param s the string to count letters in
      * @return Array with count of letters a-z in indexes 0-25
      */
-    public static int[] countLetters(String s) {
+    private static int[] countLetters(String s) {
 
         s = s.toLowerCase(Locale.ROOT);
         int[] countLetters = new int[26];
@@ -63,7 +63,7 @@ public class Task {
      * @param c char to check
      * @return {@code true} if char is a small letter
      */
-    public static boolean isSmallLetter(char c) {
+    private static boolean isSmallLetter(char c) {
         if (c >= CHAR_CODE_ALPHABET_BEGINNING && c <= CHAR_CODE_ALPHABET_ENDING) return true;
         else return false;
     }
@@ -74,7 +74,7 @@ public class Task {
      * @param counts counted letters
      * @return ready to print report
      */
-    public static String createReport(int[] counts) {
+    private static String createReport(int[] counts) {
 
         String report = "";
         for (int i = 0; i < counts.length; i++) {
